@@ -1,0 +1,14 @@
+main.game {
+    position: absolute;
+    width: 100%;
+    height: 100%;
+    z-index: 1;
+
+    canvas {
+        position: absolute;
+        width: 100% !important;
+        height: 100% !important;
+        z-index: 1;
+    }
+
+}
