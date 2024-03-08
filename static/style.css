@@ -1,4 +1,4 @@
-@import 'carbon-components-svelte/css/all.css';
+
 html,
 body {
   padding: 0;
@@ -183,4 +183,4 @@ main.game canvas {
   width: 100% !important;
   height: 100% !important;
   z-index: 1;
-}/*# sourceMappingURL=style.css.map */
+}

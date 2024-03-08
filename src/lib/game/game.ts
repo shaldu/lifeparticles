@@ -5,7 +5,7 @@ import { RenderPass } from 'postprocessing';
 import { BloomEffect } from 'postprocessing';
 
 import Stats from 'three/examples/jsm/libs/stats.module';
-import * as seedrandom from 'seedrandom';
+import * as seedrandom from "seedrandom";
 import { Helpers } from './helpers';
 import LifesourceManager from './lifesourceManager';
 import { GUI } from 'three/examples/jsm/libs/lil-gui.module.min.js'
@@ -76,7 +76,7 @@ export default class Game {
 
     changeSeed(seed: string) {
         //@ts-ignore
-        seedrandom(seed, { global: true });
+        // seedrandom(seed, { global: true });
     }
 
     //FOR ECS
@@ -173,7 +173,7 @@ export default class Game {
         const renderer = new THREE.WebGLRenderer({ antialias: true });
         renderer.setSize(window.innerWidth, window.innerHeight)
         renderer.setAnimationLoop(this.animation.bind(this));
-        renderer.setClearColor(0x222222, 1);
+        renderer.setClearColor(0x000000, 1);
 
         return renderer;
     }

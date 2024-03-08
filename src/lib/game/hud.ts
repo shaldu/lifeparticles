@@ -53,11 +53,11 @@ export default class HUD {
         //on change: update seed
         //folder general
         this.generalFolder = this.gui.addFolder('General');
-        const obj = { seed: this.game.seed };
-        this.generalFolder.add(obj, 'seed').name('Seed').onChange((seed: string) => {
-            this.game.seed = seed;
-            this.game.changeSeed(seed);
-        });
+        // const obj = { seed: this.game.seed };
+        // this.generalFolder.add(obj, 'seed').name('Seed').onChange((seed: string) => {
+        //     this.game.seed = seed;
+        //     this.game.changeSeed(seed);
+        // });
 
         this.generalFolder.add({
             randomize: () => {

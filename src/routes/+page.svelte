@@ -1,13 +1,15 @@
 <script type="ts">
-  import { Accordion, AccordionItem } from "carbon-components-svelte";
-  import GameElm from "$lib/partials/game.svelte";
-  import Main from "$lib/scripts/main";
+  import Game from "$lib/game/game";
   import { onMount } from "svelte";
-  
-  onMount(async () => {
-    new Main()
-  });
+  export const prerender = true;
 
+  onMount(() => {
+    const main = document.querySelector("main.game");
+    const seed = "x_x";
+
+    const game = new Game(main, seed);
+    game.start();
+  });
 </script>
 
-<GameElm />
+<main class="game"></main>
