@@ -64,7 +64,7 @@ export default class Game {
         this.initWorld();
         this.initEventListeners();
 
-        this.spatialGrid = new SpatialGrid(16, new THREE.Box3(new THREE.Vector3(this.camera.left, this.camera.bottom, 0), new THREE.Vector3(this.camera.right, this.camera.top, 0)));
+        this.spatialGrid = new SpatialGrid(8, new THREE.Box3(new THREE.Vector3(this.camera.left, this.camera.bottom, 0), new THREE.Vector3(this.camera.right, this.camera.top, 0)));
         // this.spatialGrid.drawGrid(this.scene);
 
         this.running = true;
